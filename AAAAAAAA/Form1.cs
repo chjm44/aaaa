@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace AAAAAAAA
 {
-    public partial class Form1 : Form
+    public partial class a : Form
     {
-        public Form1()
+        public a()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                errorProvider1.SetError(panel1, "뭘 봐");
+            }
         }
     }
 }
